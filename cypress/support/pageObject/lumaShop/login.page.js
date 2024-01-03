@@ -3,14 +3,11 @@ import "../../commands"
 class Login {
     visitHomePage() {
         cy.visit('https://magento.softwaretestingboard.com/')
+        // Klik text Sign-In
         cy.get('.panel > .header > .authorization-link > a').click()
-        // cy.fixture('lumaShop/userLogin.json').then((user) => {
-        //     cy.get('#email').type(user.email)
-        //     cy.get('#pass').type(user.pass)
-        // })
+        // Melakukan Login dengan memanggil perintah dari commands.js
         cy.loginWithFixture()
-        // cy.get('#email').type('adrianoqalbi@gmail.com')
-        // cy.get('#pass').type('adrianoQalbi1')
+        // Melakukan klik button SignIn
         cy.get('#send2').click()
     }
     // Jika ada langkah-langkah lain yang ingin dimasukkan ke dalam objek ini, Anda dapat menambahkannya di sini
