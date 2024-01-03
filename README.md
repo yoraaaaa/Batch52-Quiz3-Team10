@@ -47,7 +47,7 @@
 <p>
 <!-- name - task -->
 👨‍🦱👩‍🦰 &emsp; ...... <br/><br/>
-👨‍🦱👩‍🦰&emsp; -----<br/><br/>
+👨‍🦱👩‍🦰&emsp; Aziz - My Account->Edit Address, Choose Product(s)<br/><br/>
 👨‍🦱👩‍🦰&emsp; .....<br/><br/>
 👨‍🦱👩‍🦰&emsp; ...
 
