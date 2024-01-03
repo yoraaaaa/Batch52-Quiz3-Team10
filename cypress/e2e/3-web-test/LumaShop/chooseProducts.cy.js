@@ -12,12 +12,19 @@ describe('My Account -> Edit Address', () => {
     })
 
     it('Shop Products', () => {
+        // Masuk ke halaman Daftar Produk
         cy.get('.home-main > .content > .action').click()
+        // Memilih produk yang di kehendaki
         cy.get(':nth-child(1) > .product-item-info > .photo > .product-image-container > .product-image-wrapper > .product-image-photo').click()
+        // Memilih size
         cy.get('#option-label-size-143-item-172').click()
+        // Memilih warna
         cy.get('#option-label-color-93-item-50').click()
+        // Melakukan penambahan qty
         cy.get('#qty').clear().type('2')
+        // Menambahkan Produk ke keranjang
         cy.get('#product-addtocart-button > span').click()
+        // Melihat isi keranjang
         cy.get('.showcart').click()
         
     })
