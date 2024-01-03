@@ -1,13 +1,14 @@
-// import {login } from "../../../fixtures/lumaShop/userLogin.json"
+import "../../commands"
 
 class Login {
     visitHomePage() {
         cy.visit('https://magento.softwaretestingboard.com/')
         cy.get('.panel > .header > .authorization-link > a').click()
-        cy.fixture('lumaShop/userLogin.json').then((user) => {
-            cy.get('#email').type(user.email)
-            cy.get('#pass').type(user.pass)
-        })
+        // cy.fixture('lumaShop/userLogin.json').then((user) => {
+        //     cy.get('#email').type(user.email)
+        //     cy.get('#pass').type(user.pass)
+        // })
+        cy.loginWithFixture()
         // cy.get('#email').type('adrianoqalbi@gmail.com')
         // cy.get('#pass').type('adrianoQalbi1')
         cy.get('#send2').click()

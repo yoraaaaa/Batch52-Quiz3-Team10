@@ -9,6 +9,19 @@
 // ***********************************************
 //
 //
+
+// Perintah Login dengan memanggil data fixtures/lumaShop/userLogin.json
+Cypress.Commands.add('loginWithFixture', () => {
+    // Mengambil data dari direktori
+    cy.fixture('lumaShop/userLogin.json').then((user) => {
+        cy.get('.panel > .header > .authorization-link > a').click()
+        // Mengambil data json untuk mengisi email dan password
+        cy.get('#email').type(user.email)
+        cy.get('#pass').type(user.pass)
+    })
+})
+
+
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //

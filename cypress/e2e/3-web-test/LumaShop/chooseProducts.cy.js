@@ -1,4 +1,4 @@
-import { shop } from '../../../support/pageObject/lumaShop/baseLumaShop.page'
+import { shop } from '../../../support/pageObject/lumaShop/product.page'
 import {login } from "../../../support/pageObject/lumaShop/login.page"
 
 describe('My Account -> Edit Address', () => {
